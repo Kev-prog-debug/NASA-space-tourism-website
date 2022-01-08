@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500&family=Bellefair&display=swap");
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem 1rem;
+}
+
+.navbar-nav {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  height: 100vh;
+  width: 15rem;
+  position: absolute;
+  right: 0;
+  top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.navbar-nav .nav-links {
+  list-style-type: none;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.navbar-nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-size: 1.5rem;
+  font-family: "Barlow", sans-serif;
+}
+
+.opened {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.5rem;
+  color: white;
+  height: auto;
+  max-width: 90%;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  margin: auto;
+}
+
+.description .text {
+  max-width: 400px;
+  min-width: 300px;
+}
+
+.description .text span {
+  display: block;
+  font-size: 6rem;
+  margin: 5rem;
+  font-family: "Bellefair", serif;
+}
+
+.description .explore {
+  background-color: white;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 6rem;
+  border-radius: 50%;
+  color: #0b0d17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-family: "Bellefair", serif;
+}
+
+.planet-info {
+  padding: 1rem 1.5rem;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.planet-img {
+  max-width: 300px;
+  margin: 2rem 0;
+}
+
+.destination-navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.destination-navbar ul li {
+  list-style-type: none;
+}
+
+.destination-navbar ul li button {
+  font-size: 1.25rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid transparent;
+  font-weight: lighter;
+  padding: 0.2rem;
+}
+
+.destination-navbar ul li button:hover {
+  border-bottom: 2px solid white;
+}
+
+.destination-navbar ul li .active {
+  border-bottom: 2px solid white;
+}
+
+.planet-name {
+  font-size: 5rem;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+
+.planet-description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  margin: 1rem 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid white;
+}
+
+.travel-duration h3 {
+  font-size: 1.2rem;
+  font-family: "Barlow", sans-serif;
+  margin-top: 3rem;
+}
+
+.travel-duration .planet-distance,
+.travel-duration .travel-time {
+  font-size: 2.5rem;
+  font-family: "Bellefair", serif;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.crew-nav-links {
+  list-style-type: none;
+}
+
+.crew-nav-links div {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.246);
+}
+
+.crew-nav-links .active {
+  background-color: white;
+}
+
+.crew-navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crew-img {
+  width: auto;
+  height: 500px;
+  display: block;
+  margin: auto;
+  border-bottom: 1px solid white;
+}
+
+.crew-role {
+  margin: 3rem 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-family: "Bellefair", serif;
+  font-weight: lighter;
+}
+
+.crew-name {
+  font-size: 2.5rem;
+  font-family: "Bellefair", serif;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.crew-bio {
+  font-size: 1.5rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+.tech-info {
+  text-align: center;
+}
+
+.tech-navbar {
+  margin: 2rem 0;
+}
+
+.tech-navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tech-navbar-nav .tech-nav-links {
+  list-style-type: none;
+}
+
+.tech-navbar-nav .tech-nav-links button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.tech-navbar-nav .tech-nav-links .active {
+  background-color: white;
+  color: #0b0d17;
+}
+
+.tech-img {
+  width: 100%;
+  height: auto;
+}
+
+.terminology {
+  font-family: "Barlow", sans-serif;
+  font-weight: 350;
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+
+.tech-name {
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: "Bellefair", serif;
+  margin: 0.8rem 0;
+}
+
+.tech-description {
+  font-size: 1.5rem;
+  font-family: "Barlow", sans-serif;
+  padding: 0 1rem;
+  font-weight: 350;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(/starter-code/assets/home/background-home-mobile.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: auto;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

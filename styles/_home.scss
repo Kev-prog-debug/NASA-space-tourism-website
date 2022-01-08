@@ -1,0 +1,39 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: $paleWhite;
+  height: auto;
+  max-width: 90%;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: $squareFont;
+  margin: auto;
+  .text {
+    max-width: 400px;
+    min-width: 300px;
+    span {
+      display: block;
+      font-size: 6rem;
+      margin: 5rem;
+      font-family: $mainFont;
+    }
+  }
+  .explore {
+    background-color: $paleWhite;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 6rem;
+    border-radius: 50%;
+    color: $blackColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: $mainFont;
+  }
+}

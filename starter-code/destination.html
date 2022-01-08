@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+        body {
+            background-image: url('./assets/destination/background-destination-mobile.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="./index.html"><img src="./assets/shared/logo.svg" alt="logo"></a>
+        <ul class="navbar-nav">
+            <li class="nav-links"><a href="./index.html">
+                    <strong>00</strong> Home
+                </a></li>
+            <li class="nav-links"><a href="./destination.html">
+                    <strong>01</strong> Destination
+                </a></li>
+            <li class="nav-links"><a href="./crew.html">
+                    <strong>02</strong> Crew
+                </a></li>
+            <li class="nav-links">
+                <a href="./technology.html">
+                    <strong>03</strong> Technology
+                </a>
+            </li>
+        </ul>
+        <div class="hamburger-menu">
+            <img src="/starter-code/assets/shared/icon-hamburger.svg" alt="" class="hamburger-icon">
+        </div>
+    </nav>
+
+    <div class="planet-info">
+        <h1 class="title">01 Pick your destination</h1>
+        <img src="./assets/destination/image-europa.png" alt="" class="planet-img">
+        <nav class="destination-navbar">
+            <ul class="destination-navbar-nav">
+                <li class="destination-nav-links"><button id="moon" class="active">Moon</button></li>
+                <li class="destination-nav-links"><button id="mars">Mars</button></li>
+                <li class="destination-nav-links"><button id="europa">Europa</button></li>
+                <li class="destination-nav-links"><button id="titan">Titan</button></li>
+            </ul>
+        </nav>
+        <h3 class="planet-name">
+            Europa
+        </h3>
+        <p class="planet-description">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+            winter lover’s dream. With an icy surface, it’s perfect for a bit of
+            ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
+
+        </p>
+        <div class="travel-duration">
+            <h3>
+                Avg. distance
+            </h3>
+            <p class="planet-distance">
+                628 mil. km
+            </p>
+
+            <h3>
+                Est. travel time
+            </h3>
+            <p class="travel-time">
+                3 year
+            </p>
+        </div>
+    </div>
+    <script src="../destination.js"></script>
+    <script src="../main.js"></script>
+</body>
+
+</html>
