@@ -44,7 +44,7 @@
 
 .navbar-nav .nav-links a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
@@ -55,6 +55,77 @@
 .opened {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+@media screen and (min-width: 975px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5rem 2rem;
+  }
+  .navbar-nav {
+    -webkit-backdrop-filter: blur(5rem);
+            backdrop-filter: blur(5rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    position: relative;
+    top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .navbar-nav .nav-links {
+    list-style-type: none;
+    margin: 2rem 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-nav .nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    font-size: 1.5rem;
+    font-family: "Barlow", sans-serif;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.home-container {
+  min-height: 100vh;
+  height: auto;
 }
 
 .description {
@@ -72,12 +143,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 1.5rem;
-  color: white;
+  color: whitesmoke;
   height: auto;
   max-width: 90%;
   line-height: 1.8rem;
-  letter-spacing: 2px;
   font-size: 1.4rem;
+  font-weight: 300;
   text-align: center;
   font-family: "Barlow", sans-serif;
   margin: auto;
@@ -96,7 +167,7 @@
 }
 
 .description .explore {
-  background-color: white;
+  background-color: whitesmoke;
   height: 10rem;
   width: 10rem;
   margin-top: 6rem;
@@ -115,6 +186,93 @@
   font-family: "Bellefair", serif;
 }
 
+@media screen and (min-width: 1080px) {
+  .home-container {
+    background: url("../starter-code/assets/home/background-home-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: start;
+    position: relative;
+    max-width: 100%;
+    margin-top: 7rem;
+  }
+  .description .text {
+    max-width: 600px;
+    min-width: 500px;
+  }
+  .description .text span {
+    display: block;
+    font-size: 7rem;
+    margin: 5rem 0;
+    font-family: "Bellefair", serif;
+  }
+  .explore {
+    background-color: rgba(255, 255, 255, 0.376) !important;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    margin-top: 6rem;
+    border-radius: 50%;
+    color: #0b0d17;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem;
+    font-family: "Bellefair", serif;
+    position: relative;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .explore:hover {
+    height: 15rem;
+    width: 15rem;
+  }
+  .explore span {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.destination-container {
+  background: url("../starter-code/assets/destination/background-destination-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .planet-info {
   padding: 1rem 1.5rem;
   text-align: center;
@@ -123,8 +281,9 @@
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
+  font-family: "Barlow", sans-serif;
 }
 
 .planet-img {
@@ -150,7 +309,7 @@
 .destination-navbar ul li button {
   font-size: 1.25rem;
   background-color: transparent;
-  color: white;
+  color: whitesmoke;
   border: 2px solid transparent;
   font-weight: lighter;
   padding: 0.2rem;
@@ -166,31 +325,110 @@
 
 .planet-name {
   font-size: 5rem;
+  font-weight: 200;
+  letter-spacing: 2px;
   padding: 0.5rem;
   margin: 2rem;
+  color: whitesmoke;
 }
 
 .planet-description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: 2px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
   margin: 1rem 0;
   padding: 2rem 0;
   border-bottom: 1px solid white;
+  color: white;
 }
 
 .travel-duration h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   font-family: "Barlow", sans-serif;
-  margin-top: 3rem;
+  color: white;
+  margin: 3rem 0 0.5rem 0;
 }
 
 .travel-duration .planet-distance,
 .travel-duration .travel-time {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Bellefair", serif;
-  font-weight: bold;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 1080px) {
+  .destination-container {
+    background: url("../starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .planet-name {
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+    margin: 2rem 0;
+    color: whitesmoke;
+  }
+  .destination-title {
+    text-align: center;
+    margin: 1rem 0 5rem 0;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: "Barlow", sans-serif;
+  }
+  .planet-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+  }
+  .planet-info section:first-child {
+    width: 60%;
+  }
+  .planet-info section:first-child .planet-img {
+    max-width: 400px;
+    min-width: 300px;
+    display: block;
+    margin: 2rem auto;
+  }
+  .planet-info section:last-child {
+    width: 30%;
+  }
+  .destination-navbar ul {
+    margin: 1rem 0;
+    margin-left: -2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .destination-navbar ul li {
+    list-style-type: none;
+    margin-right: 2rem;
+  }
+  .destination-navbar ul li button {
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid transparent;
+    font-weight: lighter;
+    padding: 0.2rem;
+  }
+  .destination-navbar ul li button:hover {
+    border-bottom: 2px solid white;
+  }
+  .destination-navbar ul li .active {
+    border-bottom: 2px solid white;
+  }
 }
 
 .crew-nav-links {
@@ -208,6 +446,12 @@
   background-color: white;
 }
 
+.title {
+  margin: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 .crew-navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,30 +465,117 @@
 
 .crew-img {
   width: auto;
-  height: 500px;
+  height: 400px;
   display: block;
   margin: auto;
   border-bottom: 1px solid white;
+}
+
+.crew-info {
+  padding: 2rem 3rem;
 }
 
 .crew-role {
   margin: 3rem 0 0.5rem 0;
   font-size: 1.5rem;
   font-family: "Bellefair", serif;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .crew-name {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 200;
   font-family: "Bellefair", serif;
   margin: 0.5rem 0 1rem 0;
 }
 
 .crew-bio {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-family: "Barlow", sans-serif;
-  font-weight: lighter;
-  line-height: 1.5rem;
+  font-weight: 350;
+  line-height: 1.8rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .crew-container {
+    background-image: url("../starter-code/assets/crew/background-crew-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+  }
+  .title {
+    text-align: start;
+    padding: 0 22rem;
+    margin: 0 0 8rem 0;
+  }
+  .title span {
+    color: grey;
+  }
+  .crew-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 4rem;
+    margin: 4rem 0 0 0;
+  }
+  .crew-info .crew-img {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    border: none;
+    height: auto;
+  }
+  .crew-info section:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .crew-info section:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 550px;
+  }
+  .crew-info section .crew-data {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 500px;
+  }
+  .crew-info section .crew-role {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  .crew-info section .crew-name {
+    font-size: 4rem;
+    font-weight: lighter;
+  }
+  .crew-info section .crew-navbar {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .crew-navbar-nav {
+    max-width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .tech-info {
@@ -275,15 +606,15 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid whitesmoke;
   background-color: transparent;
-  color: white;
+  color: whitesmoke;
   font-size: 1.2rem;
   font-weight: lighter;
 }
 
 .tech-navbar-nav .tech-nav-links .active {
-  background-color: white;
+  background-color: whitesmoke;
   color: #0b0d17;
 }
 
@@ -313,6 +644,62 @@
   font-weight: 350;
 }
 
+@media screen and (min-width: 975px) {
+  .tech-navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .tech-navbar-nav li {
+    margin-bottom: 2rem;
+  }
+  .tech-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 30vh;
+    max-height: 90vh;
+  }
+  .tech-img {
+    width: 100%;
+    height: 100%;
+  }
+  .section-1 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    min-width: 30vw;
+    max-width: 40vw;
+  }
+  .section-3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 400px;
+    min-width: 300px;
+    text-align: start;
+  }
+  .tech-description {
+    margin: 1rem 0;
+    padding: 0;
+  }
+  .section-2 {
+    margin-left: 10rem;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -324,6 +711,6 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   height: auto;
-  color: white;
+  color: whitesmoke;
 }
 /*# sourceMappingURL=style.css.map */

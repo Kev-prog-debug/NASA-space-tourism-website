@@ -1,3 +1,9 @@
+.destination-container {
+  background: url("../starter-code/assets/destination/background-destination-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .planet-info {
   padding: 1rem 1.5rem;
   text-align: center;
@@ -5,8 +11,9 @@
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
+  font-family: $squareFont;
 }
 .planet-img {
   max-width: 300px;
@@ -40,29 +47,105 @@
 
 .planet-name {
   font-size: 5rem;
+  font-weight: 200;
+  letter-spacing: 2px;
   padding: 0.5rem;
   margin: 2rem;
+  color: $paleWhite;
 }
 .planet-description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: 2px;
+  font-family: $squareFont;
+  font-weight: 300;
   margin: 1rem 0;
   padding: 2rem 0;
   border-bottom: 1px solid white;
+  color: white;
 }
 
 .travel-duration {
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
     font-family: $squareFont;
-    margin-top: 3rem;
+    color: white;
+    margin: 3rem 0 0.5rem 0;
   }
   .planet-distance,
   .travel-time {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: $mainFont;
-    font-weight: bold;
-    margin: 1rem 0;
+    margin: 0.8rem 0;
+    color: $paleWhite;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .destination-container {
+    background: url("../starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .planet-name {
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 0.5rem 0;
+    margin: 2rem 0;
+    color: $paleWhite;
+  }
+  .destination-title {
+    text-align: center;
+    margin: 1rem 0 5rem 0;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: $squareFont;
+  }
+  .planet-info {
+    display: flex;
+    text-align: start;
+    section {
+      &:first-child {
+        width: 60%;
+        .planet-img {
+          max-width: 400px;
+          min-width: 300px;
+          display: block;
+          margin: 2rem auto;
+        }
+      }
+      &:last-child {
+        width: 30%;
+      }
+    }
+  }
+
+  .destination-navbar {
+    ul {
+      margin: 1rem 0;
+      margin-left: -2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      li {
+        list-style-type: none;
+        margin-right: 2rem;
+        button {
+          font-size: 1.25rem;
+          background-color: transparent;
+          color: $paleWhite;
+          border: 2px solid transparent;
+          font-weight: lighter;
+          padding: 0.2rem;
+          &:hover {
+            border-bottom: 2px solid white;
+          }
+        }
+        .active {
+          border-bottom: 2px solid white;
+        }
+      }
+    }
   }
 }
